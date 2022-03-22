@@ -1,0 +1,77 @@
+.comment-wrapper{
+    margin-bottom: 3rem;
+    h2.heading{
+        font-size: 2.6rem;
+        font-family: $secondry-font;
+    }
+    .comment-notes{
+        display: none;
+    }
+    .comment-form{
+        margin-top: 2rem;
+        p{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color:#E8594E;
+            a {
+                color: #E8594E;
+            }
+        }
+        .form-control{
+            height: 5rem;
+            font-size: 1.6rem;
+            color: #000;
+            border: 1px solid #ccc;
+            border-radius:0;
+            background: #ffffff;
+            padding: .8rem 1.8rem;
+            font-family: "SF Compact Text";
+            font-weight: normal;
+            border-radius: 6px;
+
+            &::placeholder {
+                color: #788692;
+                opacity: 1; 
+            } 
+            &:-ms-input-placeholder { 
+                color: #788692;
+            }
+            
+            &::-ms-input-placeholder { 
+                color: #788692;
+            }
+        }
+        textarea.form-control{
+            height: 12rem;
+        }
+
+        .form-group{
+            margin-bottom: 3rem;
+            .error{
+                color:red;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+                font-weight: 600;
+            }
+            .message{
+                color: #788692;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+        }
+        input[type=submit] {
+            font-family: "SF Pro Display";
+            font-weight: 900;
+            font-size: 1.2rem;
+            background: #E8594E;
+            color: #fff;
+            text-align: center;
+            padding: 20px 80px;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            margin-top: 1.5rem;
+           
+        }
+    }
+    
+}

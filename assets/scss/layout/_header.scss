@@ -1,0 +1,364 @@
+.header-sticky {
+	position: fixed;
+	top: 0;
+	background:#fff;
+	z-index: 999;
+	width: 100%;
+}
+header {
+	.mob-view {
+		display: none;
+		@include breakpoint(mobile-max) {
+			display: block;
+		}
+
+		        
+			// padding: 23px 0;
+			border-bottom: 1px solid #E5E5E5;
+			 .header_container {
+				 display: flex;
+				 justify-content: left;
+				 .h-section {          
+					  border-right: 1px solid #E5E5E5;
+					  padding: 15px 10px;
+					  text-align: center;
+					  @include breakpoint(portrait-mobile-max) {
+						  padding:5px 10px;
+					  }
+					  &:first-child {
+						  text-align: left;
+						  padding-left:0; 
+						  padding-right: 10rem;
+						  @include breakpoint (mobile-max){ 
+							  padding-right: 2rem;
+						  }
+						  @include breakpoint(portrait-mobile-max) {
+							  padding-right:1rem;
+							  padding-top: 1.5rem;
+						  }
+					  }
+					  &:last-child {
+						  text-align: left;
+						  max-width: 500px;
+						  @include breakpoint(portrait-mobile-max) {
+							  text-align: center;
+							  max-width: 150px;
+							  width: 150px;
+						  }
+					  }
+				 }
+				 .bmi_wrap {               
+					  position: relative;
+					  padding: 15px 0;
+					  @include breakpoint(portrait-mobile-max) {
+						  padding: 0;
+					  }
+					  img {
+						  @include breakpoint(portrait-mobile-max) {
+							  width: 30px;
+						  }
+					  }
+					 h3 {
+					  font-family:'Lexend-Bold';
+					  font-weight: bold;
+					  color: #2B3C56;
+					  font-size: 12px;
+					  margin-top: 10px;
+					  @include breakpoint(portrait-mobile-max) {
+						  font-size: 10px;
+					  }
+					 }
+				 }
+				 .calories_wrap {
+					position: relative;
+					padding: 5px 0 15px 0;
+					@include breakpoint(portrait-mobile-max) {
+					  padding: 0;
+				  }
+				  img {
+					  @include breakpoint(portrait-mobile-max) {
+						  width: 25px;
+					  }
+				  }
+				  h3 {
+					  font-family:'Lexend-Bold';
+					  font-weight: bold;
+					  color: #2B3C56;
+					  font-size: 12px;
+					  margin-top: 10px;
+					  @include breakpoint(portrait-mobile-max) {
+						  font-size: 10px;
+					  }
+				  }
+				 }
+				 .header_daily_poll {
+					 background: $main-green;
+	  
+					 .poll_wrap {
+						 .daily-poll-mob {
+							 display: none;
+							 @include breakpoint (mobile-max){ 
+							  display: block;
+							  margin: 10px auto;
+							  width: 35px;
+						  }
+						  @include breakpoint(portrait-mobile-max) { 
+							  margin: 0px auto 10px auto;
+							  width: 20px;
+						  }
+						 }
+	  
+					   span {
+						   color: #FFF;
+						   font-family:'Lexend';
+						   font-weight: normal;
+						   font-size: 14px;
+						   @include breakpoint(portrait-mobile-max) { 
+							  font-size: 10px;
+						   }
+					   }
+					   h2 {
+						  color: #fff;
+						  margin-top: 6px;
+						  font-size: 1.8rem;
+						  margin-bottom: 0;
+					   }
+					   a {
+						  float: right;
+						  color: #fff;
+						  font-size: 12px;
+						  text-decoration: underline;
+						  font-family: 'komet';
+					   }
+					}
+				 }
+			  
+			 }
+		  
+	}
+	.desk-view {
+		display: block;
+		@include breakpoint(mobile-max) {
+			display: none;
+		} 
+      // padding: 23px 0;
+      border-bottom: 1px solid #E5E5E5;
+       .header_container {
+          .logo {
+               text-align: center;
+			   border-right: 1px solid #E5E5E5;
+			   img {
+				padding: 22px 0;
+			   }
+		  }
+		  .col-md-2 {
+			  display: flex;
+		  }
+           .h-section {         
+                text-align: center;
+				@include breakpoint(portrait-mobile-max) {
+					padding:5px 10px;
+				}
+                 
+           }
+           .bmi_wrap {               
+                text-align: center;
+			    padding:   35px 15px 25px 0;
+				border-right: 1px solid #E5E5E5;
+				@include breakpoint(portrait-mobile-max) {
+					padding: 0;
+				}
+				img {
+					@include breakpoint(portrait-mobile-max) {
+						width: 30px;
+					}
+				}
+               h3 {
+                font-family:'Lexend-Bold';
+                font-weight: bold;
+                color: #2B3C56;
+                font-size: 12px;
+                margin-top: 10px;
+				@include breakpoint(portrait-mobile-max) {
+					font-size: 10px;
+				}
+               }
+           }
+           .calories_wrap {
+              
+			  padding: 24px 15px 25px 20px;
+			  @include breakpoint(portrait-mobile-max) {
+				padding: 0;
+			}
+			img {
+				@include breakpoint(portrait-mobile-max) {
+					width: 25px;
+				}
+			}
+            h3 {
+                font-family:'Lexend-Bold';
+                font-weight: bold;
+                color: #2B3C56;
+                font-size: 12px;
+                margin-top: 10px;
+				@include breakpoint(portrait-mobile-max) {
+					font-size: 10px;
+				}
+            }
+           }
+           .header_daily_poll {
+               background: $main-green;
+			   padding: 18px 20px;
+               .poll_wrap {
+				   .daily-poll-mob {
+					   display: none;
+					   @include breakpoint (mobile-max){ 
+						display: block;
+						margin: 10px auto;
+						width: 35px;
+					}
+					@include breakpoint(portrait-mobile-max) { 
+						margin: 0px auto 10px auto;
+						width: 20px;
+					}
+				   }
+
+                 span {
+                     color: #FFF;
+                     font-family:'Lexend';
+                     font-weight: normal;
+                     font-size: 14px;
+					 @include breakpoint(portrait-mobile-max) { 
+						font-size: 10px;
+					 }
+                 }
+                 h2 {
+                    color: #fff;
+                    margin-top: 6px;
+                    font-size: 1.8rem;
+                    margin-bottom: 0;
+                 }
+                 a {
+                    float: right;
+                    color: #fff;
+                    font-size: 12px;
+                    text-decoration: underline;
+                    font-family: 'komet';
+                 }
+              }
+           }
+        
+        
+    }
+}
+    /* HAMBURGER STYLES ----- */
+    .side_menu {
+		display: none;
+		background: #FF6A39;
+		height: 100vh;
+		left: 0px;
+		position: relative;
+		top: 0;
+		width: 250px;
+	}
+	.side_menu .container {
+		padding: 0 1em;
+	}
+
+	.burger_box {
+		display: block;
+		float: right;
+		margin-right:0px;
+		a.menu-icon {
+		 
+			padding: 10px;
+			position: absolute;
+			left: 0;
+			width: 140px;
+			text-align: center;
+			opacity: 1;
+			z-index: 100;
+			background: #FF6A39;
+		}
+	}
+	 
+	.burger_box a.menu-icon:hover,
+	.burger_box a.menu-icon.opened {
+		opacity: 1;
+	}
+	.burger_box a.menu-icon.opened {
+		background: #FF6A39; 
+	}
+	.burger_box .menu-icon_box {
+		display: inline-block;
+		height: 25px;
+		position: relative;
+		text-align: left;
+		width: 25px;
+	}
+	.burger_box .menu-icon_line {
+		background: #fff;
+		border-radius: 2px;
+		display: inline-block;
+		height: 3px;
+		position: absolute;
+		width: 100%;
+	}
+	.burger_box .menu-icon_line--1 {
+		top: 2px;
+	}
+	.burger_box .menu-icon_line--2 {
+		top: 10px;
+	}
+	.burger_box .menu-icon_line--3 {
+		top: 18px;
+	}
+	.burger_box .menu-icon_line--1 {
+		transition: top 200ms 250ms, transform 200ms;
+		-webkit-transition: top 200ms 250ms, -webkit-transform 200ms;
+	}
+	.burger_box .menu-icon_line--2 {
+		transition: opacity 0ms 300ms;
+		-webkit-transition: opacity 0ms 300ms;
+	}
+	.burger_box .menu-icon_line--3 {
+		transition: top 100ms 300ms, transform 200ms;
+		-webkit-transition: top 100ms 300ms, -webkit-transform 200ms;
+	}
+	.burger_box .menu-icon.opened .menu-icon_box {
+		transform: scale3d(0.9, 0.9, 0.9);
+		-webkit-transform: scale3d(0.9, 0.9, 0.9);
+	}
+	.burger_box .menu-icon.opened .menu-icon_line {
+		top: 10px;
+	}
+	.burger_box .menu-icon.opened .menu-icon_line--1 {
+		transform: rotate3d(0, 0, 1, 45deg);
+		-webkit-transform: rotate3d(0, 0, 1, 45deg);
+		transition: top 100ms, transform 200ms 250ms;
+		-webkit-transition: top 100ms, -webkit-transform 200ms 250ms;
+	}
+	.burger_box .menu-icon.opened .menu-icon_line--2 {
+		opacity: 0;
+		transition: opacity 200ms;
+		-webkit-transition: opacity 200ms;
+	}
+	.burger_box .menu-icon.opened .menu-icon_line--3 {
+		transform: rotate3d(0, 0, 1, -45deg);
+		-webkit-transform: rotate3d(0, 0, 1, -45deg);
+		transition: top 200ms, transform 200ms 250ms;
+		-webkit-transition: top 200ms, -webkit-transform 200ms 250ms;
+	}
+}
+// mobile design 
+
+@include breakpoint (mobile-max){
+	.header_daily_poll { 
+		h2 {
+			display: none;
+		}
+		a {
+		  display: none;	
+		}
+	}
+}

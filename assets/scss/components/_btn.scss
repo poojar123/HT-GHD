@@ -1,0 +1,62 @@
+.buy_now_btn, .btn_red {
+    font-family: "SF Pro Display";
+    font-weight: 900;
+    font-size: 1.2rem;
+    background: #E8594E;    
+    color: #fff;   
+    text-align: center;
+    
+    &:hover {
+        border:1px solid #E8594E;
+        background:transparent;
+        color:#E8594E;
+    }
+    &:focus{
+        box-shadow: none;
+        border: none;
+    }
+}
+.read_more_btn {
+    font-family: "SF Pro Display";
+    font-weight: 900;
+    font-size: 1.2rem;
+    background: #73AFBA;   
+    color: #fff;    
+    text-align: center; 
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+
+    &:hover {
+        border:1px solid #73AFBA;
+        background:transparent;
+        color:#73AFBA;
+    }
+    &:focus{
+        box-shadow: none;
+        border: none;
+    }
+}
+.btn-default{
+    display: inline-block;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 600;
+    background: #ccc;
+    color: #FFF;
+    padding: 1.1rem 3rem;
+    text-align: center;
+    min-width: 18rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    &:hover{
+        color: #FFF;
+    }
+    &:focus{
+        box-shadow: none;
+        border: none;
+    }
+    a{
+        color: #FFF;
+    }
+}

@@ -1,0 +1,26 @@
+// Fonts
+
+$primary-font: 'SF Pro Display';
+$secondry-font: 'SF Compact Text';
+$bold-font:'Source Sans Pro';
+$text-info-font:'HelveticaNeue';
+$text-font1:'SF Pro Text';
+
+// path
+$images-path: "../images" !default;
+
+//fonts Path
+$fonts-path: "../fonts" !default;
+
+:root{
+    --primary-color: #1C2E3D;
+    --secondary-color: #788692;
+    --main-green:#2B999E;
+}
+
+ 
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$main-green:var(--main-green);
+ 

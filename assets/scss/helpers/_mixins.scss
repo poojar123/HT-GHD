@@ -1,0 +1,132 @@
+/* placeholder */
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+$breakpoints: (
+  'custom-small-mobile-max': (max-width: 359px),
+  'portrait-mobile-max': (max-width: 575px),
+  'mobile-min': (min-width: 576px),
+  'mobile-max': (max-width: 767px),
+  'mobile-max-main': (max-width: 768px),
+  'ipad-min': (min-width: 768px),
+  'ipad-max': (max-width: 991px),
+  'desktop-min': (min-width: 992px),
+  'desktop-max': (max-width: 1199px),
+  'large-desktop-min': (min-width: 1200px),
+  'medium-large-desktop-min': (min-width: 1366px),
+  'medium-large-desktop-maxwidth': (max-width: 1279px),
+  'medium-large-desktop-max': (max-width: 1400px),
+  'large-desktop-max': (max-width: 1560px)
+ 
+);
+
+@mixin breakpoint($name) {
+    @if map-has-key($breakpoints, $name) {
+      @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}	
+
+@mixin d-flex {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; 
+  display: flex;
+  }
+  
+
+// Horizontal and Center Align using Transform
+@mixin horizontal-center-transform {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin vertical-center-transform {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-vertical-center-transform {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin position-center{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+// Center Block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@mixin truncate1line{
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@mixin truncate2line{
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@mixin truncate3line{
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@mixin truncate4line{
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+@mixin icomoon-icon{
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+ 
+@mixin shadoweffect{
+  box-shadow: 0 53px 76px rgba(35, 45, 60, 0.16);
+}
+

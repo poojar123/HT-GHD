@@ -1,0 +1,158 @@
+html {
+    font-size: 10px;
+}
+// 1Rem = 10px the reason why we have mention 10px in HTML.
+body {
+	font-family: $primary-font;
+	font-size: 1.4rem;
+    font-weight: 400;   
+    margin-bottom: 0 !important;
+    overflow-x: hidden;
+    background:#FFFFFF;
+}
+body.noscroll {
+    overflow-y: hidden!important;
+}
+main{
+    min-height: 65vh;
+}
+
+.custm-container{
+    max-width: 1350px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    max-width: 1350px;
+    width: 100%;
+}
+
+.heading{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    @include breakpoint(mobile-max){
+        margin-bottom: 2rem;
+    }
+     
+    &.pl-0{
+        span{
+            padding-left: 0;
+            border-left: 0;
+        }
+    }
+   
+   
+}
+
+.margin-bt{
+    margin-bottom: 3rem;
+}
+
+.horizontal-ads{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    img{
+        max-width: 720px;
+        width:720px;
+        height: 90px;
+        object-fit: cover;
+    }
+}
+.vertical-ads{
+    text-align: center;
+}
+.form-control{
+    &:focus{
+        box-shadow:none;
+        background:transparent;
+        border-color:transparent;
+
+    }
+}
+
+.page-title{
+    font-size: 4.2rem;
+    line-height: 4.7rem;
+    margin-bottom: 2.5rem;
+    text-transform: capitalize;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    padding-left: 0;
+    margin: 1.5rem 0 1rem;
+    @include breakpoint(mobile-max){
+        padding-top: 0;
+    }
+    .breadcrumb-item{
+        font-size: 1.2rem;
+        color: #ccc;
+        opacity: 0.76;
+        font-weight: bold;
+        line-height: 1.5rem;
+        a{
+            color: #ccc;
+            text-transform: capitalize;
+        }
+    }
+}
+
+@include breakpoint(ipad-max){
+    .horizontal-ads,.hdr-ads-below{
+        margin-bottom: 2.5rem;
+        img{
+            max-width: 100%;
+        }
+    }
+    .hdr-ads-below{
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img{
+            max-width: 100%;
+        }
+    }
+    .page-title{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+@include breakpoint(mobile-max){
+    .page-title{
+        font-size: 2.4rem;
+        line-height: 2.7rem;
+        margin-bottom: 2rem;
+    }
+}
+
+
+@include breakpoint(ipad-min){
+    .container,.custm-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@include breakpoint(desktop-min){
+    .container,.custm-container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@include breakpoint(large-desktop-min){
+    .container,.custm-container{
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+}
+// new common sections //
+
+ 

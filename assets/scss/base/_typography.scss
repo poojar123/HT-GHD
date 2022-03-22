@@ -1,0 +1,27 @@
+ul{
+   margin-bottom: 0;
+}
+a, a:hover, a::before, a::after, button, button:hover, button:focus, input, input:focus{
+   text-decoration: none;
+}
+
+:focus, button:focus{
+   outline: none;
+}
+
+p{
+   margin-bottom: 2rem;
+   &:last-child{
+       margin-bottom: 0;
+   }
+}
+
+h1,h2,h3,h4,h5{
+   font-family: 'Lexend';
+   color: $primary-color;
+   font-weight: bold;
+}
+
+img{
+   max-width: 100%;
+}

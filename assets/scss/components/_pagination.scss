@@ -1,0 +1,83 @@
+
+.my-custom-pagination-nav{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    ul{
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+    }
+   
+}
+
+.search-pagination {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    ul{
+        list-style: none;
+        padding-left: 0;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 0;
+        li{
+            display: inline-block;
+            i {
+                color: $primary-color;
+                border: 1px solid #959EA6;
+                padding: 8px 10px;
+                border-radius: 6px;
+                &:hover {                     
+                    color: #73AFBA;
+                }
+
+            }
+            .pagesubmitform{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                font-weight: 500;
+                margin: 0 .8rem;
+                text-decoration: none;
+                color: $secondary-color;
+                &.current-active{
+                    color: $primary-color;
+                    border-bottom: 2px solid $primary-color;
+                    font-weight: 600;
+                }
+            }
+            &.next{
+                .pagesubmitform{
+                    color: $primary-color;
+                    margin-left: 0rem;
+                    font-weight: 500;
+                    @include breakpoint(mobile-max){
+                        margin-left: 2rem;
+                    }
+                }
+            }
+            &.prev{
+                .pagesubmitform{
+                    color: $primary-color;
+                    margin-right: 0rem;
+                    font-weight: 500;
+                    @include breakpoint(mobile-max){
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+        li.my-pagination-list {
+            display: none;
+        }
+        li.current {
+            color: $primary-color;
+            border: 1px solid #959EA6;
+            padding: 6.4px 7px;
+            border-radius: 6px;
+            margin:  0 10px;
+        }
+        li.total_results {
+            color: #788692;
+        }
+    }
+}

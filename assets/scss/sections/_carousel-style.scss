@@ -1,0 +1,106 @@
+.carousel-style1-sec{
+    .block-wrapper{
+        border: 1px solid #ccc;
+        //height: 100%;
+        background: #fff;
+        .image-wrap{
+            position: relative;
+            overflow: hidden;
+            a{
+                display: block;
+            }
+            .thumbnail{
+                width: 100%;
+                height: 14.6rem;
+                object-fit: cover;
+                transition: .5s ease-in-out;
+            }
+            .play-icon{
+                position: absolute;
+                left: 1.3rem;
+                bottom: 1.1rem;
+                width: 3.9rem;
+                height: 3.9rem;
+            }
+            .paid_content{
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #FFF;
+                background: #343434;
+                padding: .45rem 1.6rem;
+                z-index: 9;
+            }
+        }
+        .content-wrap{
+            padding: 1.5rem 2rem 1.2rem;
+            h4{
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: $secondry-font;
+                min-height: 4rem;
+                @include truncate2line;
+                a{
+                    color: $primary-color;
+                }
+            }
+            .date-n-auth{
+                color: #ccc;
+                opacity: 0.76;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-top: .8rem;
+            }
+        }
+        &:hover{
+            .image-wrap{
+                .thumbnail{
+                    transform: scale(1.13);
+                }
+            }
+        }
+    }
+    .owl-stage{
+        @include breakpoint(mobile-max){
+            left: -5rem !important;
+        }
+        .item{
+            height: 100%;
+        }
+    }
+    .owl-nav{
+        .owl-prev,.owl-next{
+            position: absolute;
+            top: 30%;
+            transform: translateY(-30%);
+            width: 3.5rem;
+            height: 3.5rem;
+            background: #000 !important;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-size: 1.8rem;
+                color:#FFF;
+                line-height: 3rem;
+            }
+        }
+        .owl-prev{
+            left: -1.4rem;
+            @include breakpoint(desktop-min){
+                left: -1.8rem;
+            }
+        }
+        .owl-next{
+            right: -1.4rem;
+            @include breakpoint(desktop-min){
+                right: -1.8rem;
+            }
+        }
+    }
+}

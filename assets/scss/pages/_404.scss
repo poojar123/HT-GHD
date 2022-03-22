@@ -1,0 +1,68 @@
+.not-found-page{
+    position: fixed;
+    width: 100%;
+    background: #283743;
+    img{
+        max-width: 100%;
+        height: 100%;
+        position :relative;
+        top: -10%;
+        @include breakpoint (portrait-mobile-max) {
+            top: -19%;  
+        }
+      }
+    .not-fnd-block{
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+      
+        h1{
+            margin-bottom: 6.5rem;
+            font-family: $primary-font;
+            color: #FFFFFF;
+            font-size: 7rem;           
+            font-weight: bold;
+            text-transform:capitalize;
+
+            @include breakpoint (desktop-max) {
+                margin-bottom: 3.5rem;
+                font-size: 4rem;
+            }
+            @include breakpoint (ipad-max) {
+                font-size: 3rem;   
+                
+            }
+            @include breakpoint (portrait-mobile-max) {
+                font-size: 1.6rem!important;   
+            }
+        }
+        .btn_div {
+            a{
+                padding: 20px 80px;
+                border-radius: 8px;
+                margin-bottom: 3rem;
+                margin-top: 1.5rem;
+                @include breakpoint (portrait-mobile-max) {
+                    padding: 10px 30px;  
+                }
+             }
+        }
+       
+        @include breakpoint(mobile-max){
+            h1{
+                font-size: 3rem;
+                margin-bottom: 2.5rem;
+            }
+            p{
+                font-size: 2rem;
+                margin-bottom: 3rem;
+                line-height: 3rem;
+            }
+        }
+    }
+}
+.error404{
+    header,footer,.hdr-ads-below{
+        display: none !important;
+    }
+}
